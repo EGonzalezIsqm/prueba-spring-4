@@ -1,0 +1,25 @@
+## Archivo de configuraciones para el perfil de desarrollo
+
+server:
+    port: 8080
+    address: 0.0.0.0
+    
+igac:
+  microservicio:
+    forest:
+      url: http://sigac-qa.igac.gov.co
+      username: macroproyectos09
+      password: Forest2020.*
+      clientId: AlYPxcIQoeB68AQqT0M5ryL08Zca
+      clientSecret: yqn6Z2l43QR0RmWuTaIu8X9ZQQAa
+    contratos:
+      url: http://sigac-qa.igac.gov.co
+
+keycloak:
+  realm: IGAC
+  auth-server-url: https://sso.igac.gov.co/auth
+  ssl-required: external
+  resource: nupre-api
+  credentials.secret: 22eeb9cb-7501-464c-8df0-19372b652137
+  use-resource-role-mappings: true
+  bearer-only: true
